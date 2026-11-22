@@ -3,6 +3,19 @@
 A native Android companion app for SmartHealth-compatible smart rings.
 Kotlin + Jetpack Compose, no third-party SDKs.
 
+## Tested hardware
+
+| | |
+| --- | --- |
+| Ring | R11M (shows up as `RC20`) |
+| Firmware | 2.12 |
+| Main chip | Jieli AC632N (Bluetooth LE) |
+| Protocols | Jieli RCSP for sign-in, Yucheng YCBT for health data |
+| Motion sensor | One of QMA6100P, SC7A20X or STK8321 (the firmware supports all three and picks the one it finds) |
+| Phone | Tested on Android 17 (the app supports Android 8.0 and up) |
+
+Other rings that pair with the SmartHealth app and use the same chip and protocols may work, but haven't been tested.
+
 ## Build and install
 
 Needs JDK 17 (set `JAVA_HOME` if it isn't your default).
